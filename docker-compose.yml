@@ -1,0 +1,10 @@
+services:
+  bowl:
+    ports:
+      - 8080:8080
+    volumes:
+      - ./.bowl:/app/.bowl
+    environment:
+      GIN_MODE: release
+      ACCESS_CODE: test
+    image: fuwn/bowl:latest

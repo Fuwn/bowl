@@ -1,0 +1,21 @@
+{{template "head0"}}
+
+<form method="post" action="api/v1/entry">
+  <label for="type">type</label>
+
+  <input type="radio" id="type_poo" name="type" value="poo" checked> poo
+  <input type="radio" id="type_pee" name="type" value="pee"> pee
+  <br>
+
+  <label for="notes">notes</label>
+  <textarea id="notes" name="notes"></textarea>
+  <br>
+
+  <label for="access_code">access code</label>
+  <input type="password" id="access_code" name="access_code">
+  <br>
+
+  <input type="submit" value="submit">
+</form>
+
+{{template "head1"}}
